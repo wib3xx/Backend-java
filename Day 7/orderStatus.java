@@ -1,29 +1,29 @@
 class OrderStatus{
 	public static void main(String [] args){
 	
-	int id = 4453366;
-	System.out.println("Your order id: " + id);
+	int idProduct = 4453366;
+	System.out.println("Your order id: " + idProduct);
 	
-	String Product = " Laptop ";
-	System.out.println("Product : " + Product);
+	String productInfo = " Laptop ";
+	System.out.println("Product : " + productInfo);
 	
-	int Price = 77000;
-	System.out.println("Product MRP: " + Price);
+	int productPrice = 77000;
+	System.out.println("Product MRP: " + productPrice);
 	
-	short GST = 5564;
-	System.out.println("Product GST: " + GST);
+	short product_GST = 5564;
+	System.out.println("Product GST: " + product_GST);
 	
-	int Cart = 100001;
-	System.out.println("Total cart value: " + Cart);
+	int cartInfo = 100001;
+	System.out.println("Total cart value: " + cartInfo);
 	
-	String Name = "Sarvagay Sanmotra";
-	System.out.println("Customer Name : " + Name);
+	String custName = "Sarvagay Sanmotra";
+	System.out.println("Customer Name : " + custName);
 	
-	String Pickup = "Parul university, Vadodara, 391760";
-	System.out.println("Pickup Address: " + Pickup);
+	String pickupStatus = "Parul university, Vadodara, 391760";
+	System.out.println("Pickup Address: " + pickupStatus);
 	
-	String Delivery = "131, Panjtirthi, Andheri, Jammu 180001";
-	System.out.println("Delivered to : " + Delivery);
+	String deliveryStatus = "131, Panjtirthi, Andheri, Jammu 180001";
+	System.out.println("Delivered to : " + deliveryStatus);
 	
 	String Status1 = args[0];
 		System.out.println("Status: Tracking: " + Status1);
