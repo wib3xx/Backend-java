@@ -29,7 +29,7 @@ class DataTypes{
 		
 		
 		char ch = 'S';
-		// Used for single quote with '' not "" !!    // 16 bits 
+		// Used with single quote  '' not "" !!    // 16 bits 
 			System.out.println("My name & lastname starts with letter: " + ch);
 		
 	}
