@@ -26,7 +26,7 @@ class OrderStatus{
 	System.out.println("Delivered to : " + Delivery);
 	
 	String Status1 = args[0];
-		System.out.println("Status: In-Transit " + Status1);
+		System.out.println("Status: Tracking: " + Status1);
 	
 	//String Status2 = args[1];
 	//	System.out.println("Status: Out for delivery " + Status2);
