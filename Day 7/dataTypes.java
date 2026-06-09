@@ -7,6 +7,8 @@ class DataTypes{
 		// Range : -128 to 127 //8 bits 
 			System.out.println("Age is : " + age + ". Now he is an adult. " );
 		
+		long number = 6005815141L;
+		System.out.println("Contact Number: " + number);
 		
 		short amount = 1234;
 		// Range : -2^16 to +2^16  -1   // 16 bits
