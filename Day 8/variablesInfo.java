@@ -1,6 +1,6 @@
 class VariablesInfo
 {
-	int petrolPerLitre = 101;
+	int petrolPerLitre = 101; //Instance variable --> Stores in Heap // Can be used between class  and method
 	
 	
 	public static void main(String[] args)
