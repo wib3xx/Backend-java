@@ -1,10 +1,13 @@
 class VariablesInfo
 {
+	int petrolPerLitre = 101;
+	
+	
 	public static void main(String[] args)
 	
 	{ //Method starts here
 	
-	// Local variables lies between Main Method{}
+	// Local variables lies between Main Method{}   //Stores in Stack
 	
 	int carPrice = 5000000;
 	System.out.println("Price of the car: "+ carPrice);
@@ -19,5 +22,8 @@ class VariablesInfo
 	System.out.println("Category of the car: "+ carCategory);
 	
 	} //Method ends here
-	
+	public  void bharatPetroleum()
+	{
+		System.out.println("Petrol/L = " + petrolPerLitre);
+	}
 }
