@@ -27,7 +27,7 @@ class FoodDeliveryCoupon{
 					System.out.println("You have ordered food items and You got 20% discount !! You need to pay: Rs."+cartValueItem1wDiscount );
 					System.out.println("Thanks for Ordering !");
 						} else if(cartValue>=500){
-							System.out.println("You have ordered food items and You got 20% discount !! You need to pay: Rs."+ cartValueItem2wDiscount);
+							System.out.println("You have ordered food items and You got 10% discount !! You need to pay: Rs."+ cartValueItem2wDiscount);
 							System.out.println("Thanks for Ordering !");
 								} else {
 									System.out.println("Sorry! No discount this time, You need to pay Rs."+ cartValue);
