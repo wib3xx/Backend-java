@@ -26,10 +26,10 @@ class PlacingOrder{
 			System.out.println("Order Name = "+ orderName);
 			System.out.println("Cart Value: "+ purchaseAmount);
 			
-				if(purchaseAmount >= 500){
+				if(purchaseAmount <= 500){
 					System.out.println("You are regular customer and you got 5% discount on your order.");
 					System.out.println("You need to pay Rs."+ cartValueAftRegDiscount);
-					}	else if(purchaseAmount >= 1000){
+					}	else if(purchaseAmount <= 1000){
 							System.out.println("You are a premium customer, You got 10% discount on you order");
 							System.out.println("You need to pay Rs."+ cartValueAftPremDiscount);
 							}	else{
