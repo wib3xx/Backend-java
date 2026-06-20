@@ -7,7 +7,7 @@ class BookMyShowBooking{
 	int ticketPrice = Integer.parseInt(args[2]);
 	int numberOfSeats = Integer.parseInt(args[3]);
 	
-	bookTicket(numberOfSeats , ticketPrice , movieName , customerName);
+	bookTicket(numberOfSeats , ticketPrice , customerName , movieName);
 	
 	}
 	public static boolean bookTicket(int numberOfSeats , int ticketPrice , String customerName , String movieName ){
