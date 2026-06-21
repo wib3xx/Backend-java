@@ -15,7 +15,7 @@ class LuckyNumber{
 		if(userGuess == expectedNumber){
 			System.out.println("Congrats! You won !!!!");
 				}
-					System.out.println("You lost, enter the number again");
+					System.out.println("You lost, enter the number again! ");
 		
 		
 		}
