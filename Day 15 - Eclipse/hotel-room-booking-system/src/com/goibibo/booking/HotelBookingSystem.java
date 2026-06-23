@@ -10,66 +10,69 @@ public class HotelBookingSystem {
 		int room1PricePerDay = 4500;
 		int room2PricePerDay = 3500;
 		String customerMob = args[4];
-		
-	//	System.out.println("                                   ");
+
+		// System.out.println(" ");
 		System.out.println("===== GoIbibo Booking Reciept =====");
 		System.out.println("                                    ");
-		System.out.println("Customer Name: "+ customerName);
-		System.out.println("Hotel Name: "+ hotelName);
-		System.out.println("Room Type: "+ roomType);
-		System.out.println("Booking of Days: "+ numOfStay);
-		
-		
-		bookRoom(roomType , room1PricePerDay , room2PricePerDay , numOfStay , customerMob );
-		
+		System.out.println("Customer Name: " + customerName);
+		System.out.println("Hotel Name: " + hotelName);
+		System.out.println("Room Type: " + roomType);
+		System.out.println("Booking of Days: " + numOfStay);
+
+		bookRoom(roomType, room1PricePerDay, room2PricePerDay, numOfStay, customerMob);
+
 	}
-	public static boolean bookRoom(String roomType , int room1PricePerDay , int room2PricePerDay , int numOfStay , String customerMob) {
+
+	public static boolean bookRoom(String roomType, int room1PricePerDay, int room2PricePerDay, int numOfStay,
+			String customerMob) {
 		boolean roomAvailStatus = checkRoomAvailability(roomType);
-		boolean billStatus =  calculateBill(roomType , numOfStay , room1PricePerDay , room2PricePerDay);
-			if(roomAvailStatus && billStatus) {
-				sendConfirmationSMS(customerMob);
-				return true;
-			} else {
-				System.out.println("Booking failed!!!!");
-				return false;
-			} 
-	
+		boolean billStatus = calculateBill(roomType, numOfStay, room1PricePerDay, room2PricePerDay);
+		if (roomAvailStatus && billStatus) {
+			sendConfirmationSMS(customerMob);
+			return true;
+		} else {
+			System.out.println("Booking failed!!!!");
+			return false;
+		}
+
 	}
+
 	public static boolean checkRoomAvailability(String roomType) {
 		System.out.println("Checking Room Availability");
-			if(roomType.equals("Executive")) {
-				System.out.println("Room is avaiable");
-					return true;
-			} else if(roomType.equals("Deluxe")){
-				System.out.println("Room is available");
-				return true;
-			} else {
-				System.out.println("Rooms not avaiable");
-				return false;
-			}
-		
-		
+		if (roomType.equals("Executive")) {
+			System.out.println("Room is avaiable");
+			return true;
+		} else if (roomType.equals("Deluxe")) {
+			System.out.println("Room is available");
+			return true;
+		} else {
+			System.out.println("Rooms not avaiable");
+			return false;
+		}
+
 	}
-	public static boolean calculateBill(String roomType , int numOfStay ,int room1PricePerDay , int room2PricePerDay ) {
+
+	public static boolean calculateBill(String roomType, int numOfStay, int room1PricePerDay, int room2PricePerDay) {
 		System.out.println("Calculating bill");
-			if(roomType.equals("Executive")) {
-				System.out.println("You booked Executive Room! You need to pay Rs."+ (numOfStay * room1PricePerDay ));
-				return true;
-			}else if(roomType.equals("Deluxe")) {
-				System.out.println("You booked Deluxe Room! You need to pay Rs."+ (numOfStay * room2PricePerDay));
-				return true;
-			} else {
-				System.out.println("Room Not Available !!");
-				return false;
-			}
-		
+		if (roomType.equals("Executive")) {
+			System.out.println("You booked Executive Room! You need to pay Rs." + (numOfStay * room1PricePerDay));
+			return true;
+		} else if (roomType.equals("Deluxe")) {
+			System.out.println("You booked Deluxe Room! You need to pay Rs." + (numOfStay * room2PricePerDay));
+			return true;
+		} else {
+			System.out.println("Room Not Available !!");
+			return false;
+		}
+
 	}
+
 	public static String sendConfirmationSMS(String customerMob) {
 		System.out.println("Sending Confirmation SMS to the registered Mobile Number");
-		System.out.println("SMS sent to "+ customerMob);
-		
+		System.out.println("SMS sent to " + customerMob);
+
 		return customerMob;
-		
+
 	}
-	
+
 }
