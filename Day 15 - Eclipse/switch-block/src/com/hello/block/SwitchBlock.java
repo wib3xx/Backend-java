@@ -43,8 +43,6 @@ public class SwitchBlock {
 		}
 		return day;
 		
-		
-		
-		
+			
 	}
 }
