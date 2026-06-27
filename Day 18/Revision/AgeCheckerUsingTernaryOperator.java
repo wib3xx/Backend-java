@@ -4,7 +4,7 @@ class AgeCheckerUsingTernaryOperator{
 	
 	int age = Integer.parseInt(args[0]);
 	
-	char result = (age>= 18)? 'A' : 'M';
+	String result = (age>= 18)? "Adult" : "Minor";
 	
 	System.out.println("You are: "+ result);
 	
