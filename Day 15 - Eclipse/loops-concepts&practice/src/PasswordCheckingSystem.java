@@ -7,7 +7,7 @@ public class PasswordCheckingSystem {
 		Scanner sc = new Scanner(System.in);
 		String password = "";
 		
-		while(!password.equals("admin123")) {
+		while(!password.equals("admin1234")) {
 			
 			System.out.println("Enter Password: ");
 			
