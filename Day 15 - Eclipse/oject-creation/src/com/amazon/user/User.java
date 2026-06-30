@@ -6,21 +6,40 @@ public class User {
 	private String userId;
 	private String mobile;
 	private String email;
-	
-	public User(String _userId) {
-		this("guest user", _userId, "000000000", "abc@xyz.com"); //setting mandatory fields
-		System.out.println("User.User() -1");
+
+	static { // SIB ---> Static initialization block
+		System.out.println("Static initialization Block");
 	}
-	
-	public User(String userName, String userId, String mobile, String email) {
-		
+
+	{
+
+		System.out.println("Instance initialization block");// IIB ---> Instance initialization block
+
+	}
+
+	public User(String _mobile) {
+
+		this("XYZ", "Sar@123", _mobile, "Sar@gmail"); // Mandatory Fields / Attributes / Data
+		System.out.println("User-1");
+	}
+
+	public User(String _userName, String _userId, String _mobile, String _email) {
+
 		super();
-		System.out.println("User.User() -2");
-		this.userName = userName;
-		this.userId = userId;
-		this.mobile = mobile;
-		this.email = email;
+
+		System.out.println("User-2");
+		this.userName = _userName;
+		this.userId = _userId;
+		this.mobile = _mobile;
+		this.email = _email;
+
 	}
-	
-	
+
+	public static void main(String[] args) {
+		System.out.println("Main Method");
+		User Sarvagay = new User("12345678");
+		User Diksha = new User("98765432");
+
+	}
+
 }

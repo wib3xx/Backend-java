@@ -9,7 +9,7 @@ public class MoreSBIUsers {
 
 	
 	//MoreSBIUsers(){
-		//returns nothing because it doesnt expect any args
+		//returns nothing because it does'nt expect any args
 	//}
 	
 	MoreSBIUsers(String _userName, String _userId ,String _pwd , int _balance){

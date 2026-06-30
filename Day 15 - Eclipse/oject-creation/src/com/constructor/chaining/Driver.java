@@ -13,8 +13,8 @@ class Payment extends paymentSystems{
 	}	
 }
 
-class UPIPayments extends Payment{
-	public UPIPayments() {
+class UPIPayment extends Payment{
+	public UPIPayment() {
 		super();
 	}
 	
@@ -24,6 +24,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
+		UPIPayment p1 = new UPIPayment();
 		
 	}
 }
